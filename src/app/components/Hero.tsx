@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 
 export default function Hero() {
@@ -18,7 +17,7 @@ export default function Hero() {
         {/* Left Side - Text Content */}
         <div className="md:w-1/2 text-center md:text-left text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Hi, I&apos;m <span className="text-accent">John Doe</span>
+            Hi, I&apos;m <span className="text-accent">Faizal khan</span>
           </h1>
           <p className="text-lg text-gray-200 mb-6">
             Full Stack Developer specializing in modern web technologies and cloud solutions.
