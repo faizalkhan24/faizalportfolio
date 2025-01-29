@@ -29,10 +29,10 @@ export default function RootLayout({
         {/* Global SEO Meta Tags */}
         <meta name="description" content={metadata.description ?? "Default Description"} />
         <meta name="keywords" content={Array.isArray(metadata.keywords) ? metadata.keywords.join(", ") : metadata.keywords ?? "default, keywords"} />
-        <meta property="og:title" content={metadata.openGraph?.title ?? "Default Title"} />
+        {/* <meta property="og:title" content={metadata.openGraph?.title ?? "Default Title"} /> */}
         <meta property="og:description" content={metadata.openGraph?.description ?? "Default Description"} />
         {/* <meta property="og:image" content={metadata.openGraph?.images?.[0]?.url ?? "default-image.jpg"} /> */}
-        <meta name="twitter:title" content={metadata.twitter?.title ?? "Default Title"} />
+        {/* <meta name="twitter:title" content={metadata.twitter?.title ?? "Default Title"} /> */}
         <meta name="twitter:description" content={metadata.twitter?.description ?? "Default Description"} />
         {/* <meta name="twitter:image" content={metadata.twitter?.images?.[0] ?? "default-image.jpg"} /> */}
       </head>
