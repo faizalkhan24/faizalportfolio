@@ -33,13 +33,7 @@ export default function Hero() {
 
         {/* Right Side - Profile Image */}
         <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
-          <Image
-            src="/profile.jpg" // Replace with your actual profile image
-            alt="John Doe"
-            width={200} // Adjust as needed
-            height={200} // Adjust as needed
-            className="rounded-full shadow-lg border-4 border-white"
-          />
+         
         </div>
 
       </div>
