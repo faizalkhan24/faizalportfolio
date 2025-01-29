@@ -1,10 +1,14 @@
+import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 
 export default function Hero() {
   return (
     <section
       className="relative bg-cover bg-center bg-no-repeat py-32"
-      style={{ backgroundImage: "url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmp3MGJ5bTZkazdrdGowMXJyaDBia2U1aDh4cnUxN3NpeDNmNjNudSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/doXBzUFJRxpaUbuaqz/giphy.gif')" }} // Change this to your image or GIF
+      style={{
+        backgroundImage:
+          "url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmp3MGJ5bTZkazdrdGowMXJyaDBia2U1aDh4cnUxN3NpeDNmNjNudSZlcD12MV9pbnRlcm5naWZfYnlfaWQmY3Q9Zw/doXBzUFJRxpaUbuaqz/giphy.gif')",
+      }}
     >
       {/* Overlay for better text contrast */}
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -14,7 +18,7 @@ export default function Hero() {
         {/* Left Side - Text Content */}
         <div className="md:w-1/2 text-center md:text-left text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Hi, I'm <span className="text-accent">John Doe</span>
+            Hi, I&apos;m <span className="text-accent">John Doe</span>
           </h1>
           <p className="text-lg text-gray-200 mb-6">
             Full Stack Developer specializing in modern web technologies and cloud solutions.
@@ -29,10 +33,12 @@ export default function Hero() {
 
         {/* Right Side - Profile Image */}
         <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
-          <img
+          <Image
             src="/profile.jpg" // Replace with your actual profile image
             alt="John Doe"
-            className="w-48 md:w-64 rounded-full shadow-lg border-4 border-white"
+            width={200} // Adjust as needed
+            height={200} // Adjust as needed
+            className="rounded-full shadow-lg border-4 border-white"
           />
         </div>
 
